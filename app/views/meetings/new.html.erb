@@ -9,13 +9,8 @@
   <div>
 	<select name="course_id">
 		<% @courses.each do |course| %>
-			<%= "<option value=" + course["id"].to_s + ">" + course["title"] + "</option>" %>
+			<option value= <%= course["id"] %> > <%= course["title"] %> </option>
 		<% end %>
-
-
-		<option value="1">KIEI925 Lecture</option>
-		<option value="2">KIEI925 Discussion</option>
-		<option value="3"> KIEI925 Office Hours</option>
 	</select>
   </div>
 
